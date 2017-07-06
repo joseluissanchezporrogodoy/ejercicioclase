@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: - Classes
 typealias Words = String
-
+typealias Members = Set<Person>
 
 
 final class House{
@@ -19,10 +19,12 @@ final class House{
     let name    : String
     let sigil   : Sigil
     let words   : Words
+    private var _members : Members
     
     init(name: String, sigil: Sigil, words: Words) {
         
         (self.name, self.sigil, self.words) = (name, sigil, words)
+        _members = Members()
     }
     
 }
@@ -38,6 +40,41 @@ final class Sigil{
     }
     
 }
+
+
+extension House{
+    var count : Int{
+        return _members.count
+    }
+    
+    func add(person: Person){
+        
+        guard person.house.name == self.name else {
+            return
+        }
+        _members.insert(person)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -13,12 +13,15 @@ class PersonTest: XCTestCase {
     
     var starkHouse : House!
     var starkSigil : Sigil!
+    var ned         : Person!
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
         starkSigil = Sigil(image: #imageLiteral(resourceName: "codeIsComing.png"), description: "Direwolf")
         starkHouse = House(name: "Stark", sigil: starkSigil, words: "Winter is coming!")
+        
+        ned = Person(name: "Eddard", alias: "Ned", house: starkHouse)
     }
     
     override func tearDown() {
@@ -27,10 +30,15 @@ class PersonTest: XCTestCase {
     }
     
     func testPersonExistence(){
+   
         
-        
-        let ned = Person(name: "Eddard", alias: "Ned", house: starkHouse)
         
         XCTAssertNotNil(ned)
     }
+    
+    func testFullName(){
+        XCTAssertEqual(ned.fullName, "Eddard Stark")
+    }
+    
+    
 }
