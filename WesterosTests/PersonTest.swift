@@ -9,7 +9,7 @@
 import XCTest
 @testable import Westeros
 
-class CharacterTest: XCTestCase {
+class PersonTest: XCTestCase {
     
     var starkHouse : House!
     var starkSigil : Sigil!
@@ -26,9 +26,10 @@ class CharacterTest: XCTestCase {
         super.tearDown()
     }
     
-    func testCharacterExistence(){
+    func testPersonExistence(){
         
-        let ned = Character(name: "Eddard", alias: "Ned", house: starkHouse)
+        
+        let ned = Person(name: "Eddard", alias: "Ned", house: starkHouse)
         
         XCTAssertNotNil(ned)
     }

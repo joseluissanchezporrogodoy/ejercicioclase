@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class Character{
+final class Person{
     
     let name    : String
     let house   : House
@@ -20,5 +20,19 @@ final class Character{
         }
     }
     
+    init(name: String, alias: String, house: House) {
+        
+        self.name = name
+        _alias = alias
+        self.house = house
+    }
     
+    init(name: String, house: House){
+        self.name = name
+        self.house = house
+        _alias = nil
+    }
 }
+
+
+

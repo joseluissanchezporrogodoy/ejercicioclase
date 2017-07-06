@@ -14,8 +14,8 @@
 		ED8E650F1F0EC23700BCC853 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E650E1F0EC23700BCC853 /* House.swift */; };
 		ED8E65131F0EC86D00BCC853 /* codeIsComing.png in Resources */ = {isa = PBXBuildFile; fileRef = ED8E65111F0EC86D00BCC853 /* codeIsComing.png */; };
 		ED8E65141F0EC86D00BCC853 /* lannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED8E65121F0EC86D00BCC853 /* lannister.jpg */; };
-		ED8E65171F0ECAA200BCC853 /* CharacterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E65161F0ECAA200BCC853 /* CharacterTest.swift */; };
-		ED8E65191F0ECD8500BCC853 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E65181F0ECD8500BCC853 /* Character.swift */; };
+		ED8E65171F0ECAA200BCC853 /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E65161F0ECAA200BCC853 /* PersonTest.swift */; };
+		ED8E65191F0ECD8500BCC853 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E65181F0ECD8500BCC853 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +40,8 @@
 		ED8E650E1F0EC23700BCC853 /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		ED8E65111F0EC86D00BCC853 /* codeIsComing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeIsComing.png; sourceTree = "<group>"; };
 		ED8E65121F0EC86D00BCC853 /* lannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lannister.jpg; sourceTree = "<group>"; };
-		ED8E65161F0ECAA200BCC853 /* CharacterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTest.swift; sourceTree = "<group>"; };
-		ED8E65181F0ECD8500BCC853 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		ED8E65161F0ECAA200BCC853 /* PersonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
+		ED8E65181F0ECD8500BCC853 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			children = (
 				ED853EFE1F0C47E100F04AD6 /* Info.plist */,
 				ED8E650C1F0EC0F700BCC853 /* HouseTests.swift */,
-				ED8E65161F0ECAA200BCC853 /* CharacterTest.swift */,
+				ED8E65161F0ECAA200BCC853 /* PersonTest.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -107,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				ED8E650E1F0EC23700BCC853 /* House.swift */,
-				ED8E65181F0ECD8500BCC853 /* Character.swift */,
+				ED8E65181F0ECD8500BCC853 /* Person.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -228,7 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED8E65191F0ECD8500BCC853 /* Character.swift in Sources */,
+				ED8E65191F0ECD8500BCC853 /* Person.swift in Sources */,
 				ED8E650F1F0EC23700BCC853 /* House.swift in Sources */,
 				ED853EE81F0C47E100F04AD6 /* AppDelegate.swift in Sources */,
 			);
@@ -239,7 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED8E650D1F0EC0F700BCC853 /* HouseTests.swift in Sources */,
-				ED8E65171F0ECAA200BCC853 /* CharacterTest.swift in Sources */,
+				ED8E65171F0ECAA200BCC853 /* PersonTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
