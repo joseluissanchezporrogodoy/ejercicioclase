@@ -56,14 +56,46 @@ extension House{
     }
 }
 
+extension House{
+    var proxyForEquality : String{
+        get{
+            return "\(name) \(words) \(count)"
+        }
+    }
+    
+    var proxyForComparison : String{
+        get{
+            return name.uppercased()
+        }
+    }
+}
 
 
 
+// MARK: - Equatable
+extension House : Equatable{
+    static func ==(lhs: House, rhs: House) -> Bool {
+        return lhs.proxyForEquality == rhs.proxyForEquality
+    }
+  
+}
 
+// MARK: - Hashable
+extension House : Hashable{
+    var hashValue: Int {
+        return proxyForEquality.hashValue
+    }
+}
 
+// MARK: - Comparable
+extension House : Comparable{
+    static func <(lhs: House, rhs: House) -> Bool {
+        return lhs.proxyForComparison < rhs.proxyForComparison
+    }
 
-
-
+    
+    
+}
 
 
 
