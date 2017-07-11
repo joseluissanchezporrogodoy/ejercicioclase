@@ -22,6 +22,7 @@ class HouseViewController: UIViewController {
     init(model: House){
         self.model = model
         super.init(nibName: nil, bundle: nil)
+        title = model.name
         
     }
     
@@ -36,6 +37,8 @@ class HouseViewController: UIViewController {
         houseNameView.text = "House \(model.name)"
         sigilImageView.image = model.sigil.image
         wordsTextView.text = model.words
+        
+        
     }
     
     
