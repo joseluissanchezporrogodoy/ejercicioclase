@@ -17,6 +17,8 @@
 		ED8E65171F0ECAA200BCC853 /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E65161F0ECAA200BCC853 /* PersonTest.swift */; };
 		ED8E65191F0ECD8500BCC853 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E65181F0ECD8500BCC853 /* Person.swift */; };
 		EDE69E5E1F155D9C00CE93C9 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE69E5D1F155D9C00CE93C9 /* UIKitExtensions.swift */; };
+		EDE69E601F15607C00CE93C9 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE69E5F1F15607C00CE93C9 /* RepositoryTests.swift */; };
+		EDE69E621F15622400CE93C9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE69E611F15622400CE93C9 /* Repository.swift */; };
 		EDFDFA9F1F14128D00699250 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDFA9D1F14128D00699250 /* HouseViewController.swift */; };
 		EDFDFAA01F14128D00699250 /* HouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDFDFA9E1F14128D00699250 /* HouseViewController.xib */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		ED8E65161F0ECAA200BCC853 /* PersonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
 		ED8E65181F0ECD8500BCC853 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		EDE69E5D1F155D9C00CE93C9 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		EDE69E5F1F15607C00CE93C9 /* RepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
+		EDE69E611F15622400CE93C9 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		EDFDFA9D1F14128D00699250 /* HouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
 		EDFDFA9E1F14128D00699250 /* HouseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HouseViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +111,7 @@
 				ED853EFE1F0C47E100F04AD6 /* Info.plist */,
 				ED8E650C1F0EC0F700BCC853 /* HouseTests.swift */,
 				ED8E65161F0ECAA200BCC853 /* PersonTest.swift */,
+				EDE69E5F1F15607C00CE93C9 /* RepositoryTests.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 			children = (
 				ED8E650E1F0EC23700BCC853 /* House.swift */,
 				ED8E65181F0ECD8500BCC853 /* Person.swift */,
+				EDE69E611F15622400CE93C9 /* Repository.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -259,6 +265,7 @@
 				ED853EE81F0C47E100F04AD6 /* AppDelegate.swift in Sources */,
 				EDFDFA9F1F14128D00699250 /* HouseViewController.swift in Sources */,
 				EDE69E5E1F155D9C00CE93C9 /* UIKitExtensions.swift in Sources */,
+				EDE69E621F15622400CE93C9 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +275,7 @@
 			files = (
 				ED8E650D1F0EC0F700BCC853 /* HouseTests.swift in Sources */,
 				ED8E65171F0ECAA200BCC853 /* PersonTest.swift in Sources */,
+				EDE69E601F15607C00CE93C9 /* RepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
