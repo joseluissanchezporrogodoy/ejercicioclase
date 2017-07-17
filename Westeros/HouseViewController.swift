@@ -32,7 +32,30 @@ class HouseViewController: UIViewController {
     }
     
 
+    func setupUI(){
+        // Creamos un botón a la barra del navigationController
+        let wiki = UIBarButtonItem(title: "Wiki",
+                                   style: .plain,
+                                   target: self,
+                                   action: #selector(displayWiki))
+        
+        
+        // Añadimos
+        navigationItem.rightBarButtonItem = wiki
+    }
+    
+    @objc func displayWiki(){
+    
+        // Creamos un WikiVC
+        let wikiVC = WikiViewController(model: model)
+        
+        // Lo cargamos en el navigation
+        navigationController?.pushViewController(wikiVC,
+                                                 animated: true)
+    }
+    
     func syncViewWithModel(){
+        
         // model -> view
         houseNameView.text = "House \(model.name)"
         sigilImageView.image = model.sigil.image
@@ -44,6 +67,8 @@ class HouseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        setupUI()
         
         syncViewWithModel()
     }
