@@ -24,7 +24,7 @@ protocol HouseFactory {
 
 final class LocalFactory : HouseFactory{
     
-    func houses(filteredBy: (House) -> Bool) -> [House] {
+    func houses(filteredBy: Filter) -> [House] {
         let filtered = Repository.local.houses.filter(filteredBy)
         return filtered
     }
@@ -38,15 +38,29 @@ final class LocalFactory : HouseFactory{
             let lannisterSigil = Sigil(image: #imageLiteral(resourceName: "lannister.jpg"), description: "Rampant Lion")
             let targaryenSigil = Sigil(image: #imageLiteral(resourceName: "targaryenSmall.jpg"), description: "Three headed dragon")
             
-            let stark = House(name: "Stark", sigil: starkSigil, words: "Winter is coming!")
-            let lannister = House(name: "Lannister", sigil: lannisterSigil, words: "Hear me roar!")
-            let targaryen = House(name: "Targaryen", sigil: targaryenSigil, words: "Fire & Blood")
+            
+            let starkURL = URL(string: "http://awoiaf.westeros.org/index.php/House_Stark")!
+            let lannisterURL = URL(string:"http://awoiaf.westeros.org/index.php/House_Lannister")!
+            let targaryenURL = URL(string: "http://awoiaf.westeros.org/index.php/House_Targaryen")!
+            
+            let stark = House(name: "Stark",
+                              sigil: starkSigil,
+                              words: "Winter is coming!",
+                              url: starkURL)
+            let lannister = House(name: "Lannister",
+                                  sigil: lannisterSigil,
+                                  words: "Hear me roar!",
+                                  url: lannisterURL)
+            let targaryen = House(name: "Targaryen",
+                                  sigil: targaryenSigil,
+                                  words: "Fire & Blood",
+                                  url: targaryenURL)
             
             let robb = Person(name: "Robb", alias: "The young wolf", house: stark)
             let arya = Person(name: "Arya", house: stark)
             
             let tyrion = Person(name: "Tyrion", alias: "The Imp", house: lannister)
-            let jaime = Person(name: "Jaime", alias: "Kinglsayer", house: lannister)
+            let jaime = Person(name: "Jaime", alias: "Kingslayer", house: lannister)
             let cersei = Person(name: "Cersei", house: lannister)
             
             let dani = Person(name: "Daenerys", alias: "Mother of dragons", house: targaryen)
@@ -64,6 +78,7 @@ final class LocalFactory : HouseFactory{
         
         let house = houses.filter{$0.name.uppercased() == named.uppercased()}.first
         return house
+        
         
     }
     

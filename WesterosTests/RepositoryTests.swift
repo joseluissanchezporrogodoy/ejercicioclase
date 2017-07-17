@@ -37,17 +37,21 @@ class RepositoryTests: XCTestCase {
     
     func testLocalRepositoryReturnsSortedArrayofHouses(){
         
-
         XCTAssertEqual(localHouses, localHouses.sorted())
     }
     
     func testLocalRepoReturnsHousesByNameCaseInsensitively(){
         let stark = Repository.local.house(named: "sTarK")
         XCTAssertEqual(stark?.name, "Stark")
+        
+        let grijander = Repository.local.house(named: "Grijander")
+        XCTAssertNil(grijander)
+        
     }
     
     func testHouseFiltering(){
-        let filtered = Repository.local.houses.filter{ $0.count == 1}
+        let filtered = Repository.local.houses(filteredBy: {$0.count == 1})
+        
         XCTAssertEqual(filtered.count, 1)
     }
     
