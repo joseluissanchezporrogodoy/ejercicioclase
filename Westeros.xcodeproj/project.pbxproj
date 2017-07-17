@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED32F0421F1CB60D000408C4 /* targaryenSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED32F0411F1CB60D000408C4 /* targaryenSmall.jpg */; };
 		ED853EE81F0C47E100F04AD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED853EE71F0C47E100F04AD6 /* AppDelegate.swift */; };
 		ED853EEF1F0C47E100F04AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED853EEE1F0C47E100F04AD6 /* Assets.xcassets */; };
 		ED853EF21F0C47E100F04AD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED853EF01F0C47E100F04AD6 /* LaunchScreen.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED32F0411F1CB60D000408C4 /* targaryenSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = targaryenSmall.jpg; sourceTree = "<group>"; };
 		ED853EE41F0C47E100F04AD6 /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED853EE71F0C47E100F04AD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED853EEE1F0C47E100F04AD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				ED8E65111F0EC86D00BCC853 /* codeIsComing.png */,
+				ED32F0411F1CB60D000408C4 /* targaryenSmall.jpg */,
 				ED8E65121F0EC86D00BCC853 /* lannister.jpg */,
 			);
 			name = Resources;
@@ -240,6 +243,7 @@
 			files = (
 				ED8E65141F0EC86D00BCC853 /* lannister.jpg in Resources */,
 				ED8E65131F0EC86D00BCC853 /* codeIsComing.png in Resources */,
+				ED32F0421F1CB60D000408C4 /* targaryenSmall.jpg in Resources */,
 				EDFDFAA01F14128D00699250 /* HouseViewController.xib in Resources */,
 				ED853EF21F0C47E100F04AD6 /* LaunchScreen.storyboard in Resources */,
 				ED853EEF1F0C47E100F04AD6 /* Assets.xcassets in Resources */,

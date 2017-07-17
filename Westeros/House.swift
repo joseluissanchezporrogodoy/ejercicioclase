@@ -54,6 +54,12 @@ extension House{
         }
         _members.insert(person)
     }
+    
+    func add(persons: Person...){
+        for person in persons{
+            add(person: person)
+        }
+    }
 }
 
 extension House{
