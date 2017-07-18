@@ -25,6 +25,10 @@
 		EDA81BA51F1E5177001A25C5 /* MembersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA81BA31F1E5177001A25C5 /* MembersViewController.xib */; };
 		EDC1FB6C1F1E99DD00C33347 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FB6B1F1E99DD00C33347 /* ArrayDataSource.swift */; };
 		EDC1FB6E1F1E9EE000C33347 /* ArrayDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FB6D1F1E9EE000C33347 /* ArrayDataSourceTests.swift */; };
+		EDC1FB701F1EA99300C33347 /* ArrayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FB6F1F1EA99300C33347 /* ArrayTableViewController.swift */; };
+		EDC1FB731F1EAB7100C33347 /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FB721F1EAB7100C33347 /* DataSources.swift */; };
+		EDC1FB751F1EB02500C33347 /* ArrayTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FB741F1EB02500C33347 /* ArrayTableViewDelegate.swift */; };
+		EDC1FB791F1EB11900C33347 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FB781F1EB11900C33347 /* Delegates.swift */; };
 		EDE69E5E1F155D9C00CE93C9 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE69E5D1F155D9C00CE93C9 /* UIKitExtensions.swift */; };
 		EDE69E601F15607C00CE93C9 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE69E5F1F15607C00CE93C9 /* RepositoryTests.swift */; };
 		EDE69E621F15622400CE93C9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE69E611F15622400CE93C9 /* Repository.swift */; };
@@ -65,6 +69,10 @@
 		EDA81BA31F1E5177001A25C5 /* MembersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MembersViewController.xib; sourceTree = "<group>"; };
 		EDC1FB6B1F1E99DD00C33347 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
 		EDC1FB6D1F1E9EE000C33347 /* ArrayDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSourceTests.swift; sourceTree = "<group>"; };
+		EDC1FB6F1F1EA99300C33347 /* ArrayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTableViewController.swift; sourceTree = "<group>"; };
+		EDC1FB721F1EAB7100C33347 /* DataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSources.swift; sourceTree = "<group>"; };
+		EDC1FB741F1EB02500C33347 /* ArrayTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTableViewDelegate.swift; sourceTree = "<group>"; };
+		EDC1FB781F1EB11900C33347 /* Delegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
 		EDE69E5D1F155D9C00CE93C9 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
 		EDE69E5F1F15607C00CE93C9 /* RepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		EDE69E611F15622400CE93C9 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -155,6 +163,34 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		EDC1FB711F1EAB4900C33347 /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1FB771F1EB0EE00C33347 /* Delegates */,
+				EDC1FB761F1EB0DA00C33347 /* Data Sources */,
+				EDC1FB6B1F1E99DD00C33347 /* ArrayDataSource.swift */,
+				EDC1FB6F1F1EA99300C33347 /* ArrayTableViewController.swift */,
+				EDC1FB741F1EB02500C33347 /* ArrayTableViewDelegate.swift */,
+			);
+			name = Generics;
+			sourceTree = "<group>";
+		};
+		EDC1FB761F1EB0DA00C33347 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1FB721F1EAB7100C33347 /* DataSources.swift */,
+			);
+			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		EDC1FB771F1EB0EE00C33347 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1FB781F1EB11900C33347 /* Delegates.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
 		EDE69E5C1F155D7800CE93C9 /* Cocoa */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +202,7 @@
 		EDFDFAA11F14129500699250 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EDC1FB711F1EAB4900C33347 /* Generics */,
 				EDFDFA9D1F14128D00699250 /* HouseViewController.swift */,
 				EDFDFA9E1F14128D00699250 /* HouseViewController.xib */,
 				EDA81B961F1D4A1F001A25C5 /* WikiViewController.swift */,
@@ -174,7 +211,6 @@
 				EDA81B9F1F1D666A001A25C5 /* HousesViewController.xib */,
 				EDA81BA21F1E5177001A25C5 /* MembersViewController.swift */,
 				EDA81BA31F1E5177001A25C5 /* MembersViewController.xib */,
-				EDC1FB6B1F1E99DD00C33347 /* ArrayDataSource.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -291,7 +327,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC1FB701F1EA99300C33347 /* ArrayTableViewController.swift in Sources */,
 				EDC1FB6C1F1E99DD00C33347 /* ArrayDataSource.swift in Sources */,
+				EDC1FB791F1EB11900C33347 /* Delegates.swift in Sources */,
+				EDC1FB751F1EB02500C33347 /* ArrayTableViewDelegate.swift in Sources */,
 				ED8E65191F0ECD8500BCC853 /* Person.swift in Sources */,
 				EDA81BA41F1E5177001A25C5 /* MembersViewController.swift in Sources */,
 				ED8E650F1F0EC23700BCC853 /* House.swift in Sources */,
@@ -300,6 +339,7 @@
 				EDFDFA9F1F14128D00699250 /* HouseViewController.swift in Sources */,
 				EDE69E5E1F155D9C00CE93C9 /* UIKitExtensions.swift in Sources */,
 				EDE69E621F15622400CE93C9 /* Repository.swift in Sources */,
+				EDC1FB731F1EAB7100C33347 /* DataSources.swift in Sources */,
 				EDA81B981F1D4A1F001A25C5 /* WikiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
