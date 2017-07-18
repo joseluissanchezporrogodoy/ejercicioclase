@@ -66,7 +66,6 @@ extension Person : Comparable{
         return lhs.proxy < rhs.proxy
     }
 
-    
 }
 
 

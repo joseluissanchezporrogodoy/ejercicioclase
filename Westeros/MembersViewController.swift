@@ -36,7 +36,7 @@ class MembersViewController: UITableViewController {
     override func tableView(_ tableView: UITableView,
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cellID = "HouseCell"
+        let cellID = "MemberCell"
         
         // Descubrir cuala es la persona que tenemos que mostrar
         let person = model[indexPath.row]

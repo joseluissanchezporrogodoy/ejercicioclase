@@ -23,6 +23,8 @@
 		EDA81BA11F1D666A001A25C5 /* HousesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA81B9F1F1D666A001A25C5 /* HousesViewController.xib */; };
 		EDA81BA41F1E5177001A25C5 /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA81BA21F1E5177001A25C5 /* MembersViewController.swift */; };
 		EDA81BA51F1E5177001A25C5 /* MembersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA81BA31F1E5177001A25C5 /* MembersViewController.xib */; };
+		EDC1FB6C1F1E99DD00C33347 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FB6B1F1E99DD00C33347 /* ArrayDataSource.swift */; };
+		EDC1FB6E1F1E9EE000C33347 /* ArrayDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FB6D1F1E9EE000C33347 /* ArrayDataSourceTests.swift */; };
 		EDE69E5E1F155D9C00CE93C9 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE69E5D1F155D9C00CE93C9 /* UIKitExtensions.swift */; };
 		EDE69E601F15607C00CE93C9 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE69E5F1F15607C00CE93C9 /* RepositoryTests.swift */; };
 		EDE69E621F15622400CE93C9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE69E611F15622400CE93C9 /* Repository.swift */; };
@@ -61,6 +63,8 @@
 		EDA81B9F1F1D666A001A25C5 /* HousesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HousesViewController.xib; sourceTree = "<group>"; };
 		EDA81BA21F1E5177001A25C5 /* MembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
 		EDA81BA31F1E5177001A25C5 /* MembersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MembersViewController.xib; sourceTree = "<group>"; };
+		EDC1FB6B1F1E99DD00C33347 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
+		EDC1FB6D1F1E9EE000C33347 /* ArrayDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSourceTests.swift; sourceTree = "<group>"; };
 		EDE69E5D1F155D9C00CE93C9 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
 		EDE69E5F1F15607C00CE93C9 /* RepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		EDE69E611F15622400CE93C9 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 				ED8E650C1F0EC0F700BCC853 /* HouseTests.swift */,
 				ED8E65161F0ECAA200BCC853 /* PersonTest.swift */,
 				EDE69E5F1F15607C00CE93C9 /* RepositoryTests.swift */,
+				EDC1FB6D1F1E9EE000C33347 /* ArrayDataSourceTests.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				EDA81B9F1F1D666A001A25C5 /* HousesViewController.xib */,
 				EDA81BA21F1E5177001A25C5 /* MembersViewController.swift */,
 				EDA81BA31F1E5177001A25C5 /* MembersViewController.xib */,
+				EDC1FB6B1F1E99DD00C33347 /* ArrayDataSource.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC1FB6C1F1E99DD00C33347 /* ArrayDataSource.swift in Sources */,
 				ED8E65191F0ECD8500BCC853 /* Person.swift in Sources */,
 				EDA81BA41F1E5177001A25C5 /* MembersViewController.swift in Sources */,
 				ED8E650F1F0EC23700BCC853 /* House.swift in Sources */,
@@ -303,6 +310,7 @@
 			files = (
 				ED8E650D1F0EC0F700BCC853 /* HouseTests.swift in Sources */,
 				ED8E65171F0ECAA200BCC853 /* PersonTest.swift in Sources */,
+				EDC1FB6E1F1E9EE000C33347 /* ArrayDataSourceTests.swift in Sources */,
 				EDE69E601F15607C00CE93C9 /* RepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
