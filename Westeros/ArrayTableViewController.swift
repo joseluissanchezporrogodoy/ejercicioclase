@@ -11,16 +11,22 @@ import UIKit
 class ArrayTableViewController<Element>: UITableViewController {
 
     let dataSource : ArrayDataSource<Element>
+    let delegate: ArrayTableViewDelegate<Element>?
     
     
-    
-    init(dataSource: ArrayDataSource<Element>, title: String, style: UITableViewStyle){
+    init(dataSource: ArrayDataSource<Element>,delegate: ArrayTableViewDelegate<Element>!, title: String, style: UITableViewStyle){
         
         self.dataSource = dataSource
+        self.delegate = delegate
         super.init(style: style)
         self.title = title
         
+        if let _ = self.delegate {
+            //Do Something
+            tableView.delegate = self.delegate
+        }
         tableView.dataSource = self.dataSource
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

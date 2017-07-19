@@ -27,12 +27,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Creamos los controladores
         let dataSource = DataSources.houseDataSource(model: houses)
-        let housesVC = ArrayTableViewController(dataSource: dataSource,
+        let navigation = UINavigationController()
+        let delegate = Delegates.housesDelegate(model: houses,nav: navigation)
+        let housesVC = ArrayTableViewController(dataSource: dataSource,delegate: delegate,
                                                 title: "Westeros",
-                                                style: .plain).wrappedInNavigation()
+                                                style: .plain)
+        
+        
+        
+       navigation.pushViewController(housesVC, animated: true)
         
         // Asignamos el RootVC
-        window?.rootViewController = housesVC
+        window?.rootViewController = navigation
         
         
         return true

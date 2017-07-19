@@ -51,11 +51,17 @@ class HouseViewController: UIViewController {
     @objc func displayMembers(){
         
         // Creamos el membersVC
-        let membersVC = MembersViewController(model: model.sortedMembers())
+     //   let membersVC = MembersViewController(model: model.sortedMembers())
         
         // LO pusheamos
-        navigationController?.pushViewController(membersVC, animated: true)
+       // navigationController?.pushViewController(membersVC, animated: true)
         
+        let dataSource = DataSources.personDataSource(model: model.sortedMembers())
+        let membersVC = ArrayTableViewController(dataSource: dataSource,delegate: nil,
+                                                title: "Members",
+                                                style: .plain)
+        
+         navigationController?.pushViewController(membersVC, animated: true)
         
     }
     @objc func displayWiki(){
